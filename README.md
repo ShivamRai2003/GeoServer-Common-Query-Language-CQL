@@ -95,7 +95,7 @@ Click on the Options button at the top of the map preview to open the advanced o
 
 ``Note : The full list of geometric predicates is: EQUALS, DISJOINT, INTERSECTS, TOUCHES, CROSSES, WITHIN, CONTAINS, OVERLAPS, RELATE, DWITHIN, BEYOND.``
 
-**4th Query : Now I want to show that the value of iso_num (iso = country_code) will be greater than 350 then the required filter will be** ``iso_num > 350``
+**4th Query : Now I want to show that the value of iso_num (iso = country_code) will be greater than 500 then the required filter will be** ``iso_num > 350``
 
 ![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/iso_num.JPG)
 
@@ -137,13 +137,13 @@ Also It creates an open layers or just reflect the image file.
 
 **Wms Reflector >> small and simple code .With ease understand**
 
-``WMS reflector has a great advantage in some occasions., as Standard WMS requests can be quite long and verbose. Typing into a browser, or HTML editor, can be quite cumbersome and error prone. The WMS Reflector solves this problem nicely by using good default values for the options that you do not specify.
-For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature for Russia:Asia_Russia``
+``WMS reflector has a great advantage in some occasions., as Standard WMS requests can be quite long and verbose. Typing into a browser, or HTML editor, can be quite cumbersome and error prone. The WMS Reflector solves this problem nicely by using good default values for the options that you do not specify.``
+``For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature for Russia:Asia_Russia``
 
 <!DOCTYPE html>
 <html lang="en">
-<a href="http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=Russia:Asia_Russia">
-<img src="http://localhost:8080/geoserver/wms/reflect?layers=Russia:Asia_Russia&width=750"/>
+<a href="http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=Practical:Asia_Russia">
+<img src="http://localhost:8080/geoserver/wms/reflect?layers=Practical:Asia_Russia&width=750"/>
 </a>
 </html>
 
@@ -155,6 +155,6 @@ Also It creates an open layers or just reflect the image file.
 
 ### Image of the layer 
 
-![]()
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/WMS_REFLECTOR.JPG)
 
-
+   **Thank You !**
