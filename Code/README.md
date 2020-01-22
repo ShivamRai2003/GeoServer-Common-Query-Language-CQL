@@ -1,2 +1,1 @@
-Following Html Code is written to show the layer
-
+## Following Html Code is written which will display the OpenLayers to display the added layer.
