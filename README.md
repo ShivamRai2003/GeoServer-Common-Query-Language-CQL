@@ -69,3 +69,37 @@ And Now GeoServer Screen Will be Open.
 ![](https://github.com/ShivamRai2003/Web-map-that-displays-a-WMS-layer/blob/master/IMAGES/9.JPG)
 
 17. An OpenLayers map will load in a new tab and display the shapefile data with the default line style. You can use this preview map to zoom and pan around the dataset, as well as display the attributes of features.
+
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/layer.JPG)
+
+**Let's Implement CQL queries**
+
+**CQL(Common Query Language) : created by the OGC for the Catalogue Web Services specification. Unlike the XML-based Filter Encoding language, CQL is written using a familiar text-based syntax. It is thus more readable and better-suited for manual authoring.**
+
+As Our OpenMap has been loaded through openlayers and you can see the respective map. Just zoom in and zoom out for more clearly to be shown.
+
+Click on the Options button at the top of the map preview to open the advanced options toolbar. The example filters can be entered in the Filter: CQL box.
+
+**1st Query : Like we want to show the only the region of Russia and India so the command for filter will be ``NAME IN ('INDIA', 'RUSSIA')`` 
+It will show only the Russia and India region. And to show only one region like India just use the query ``REGION='INDIA'`` **
+
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/Russia%20and%20India.JPG)
+
+**2nd Query : Now If we want to show the (Top level of domain) of India only just use the filter ``'tld='.in'`` It will show the top level domain for India only fromt tehe whole map.**
+
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/TLD.JPG)
+
+**3nd Query : Like Now I want to show that display only the states that intersect the (-90,40,-60,45) bounding box. The filter will be ``BBOX(the_geom, -90, 40, -60, 45)`` **
+
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/BBOX(GEOMETRIC).JPG)
+
+``Note : The full list of geometric predicates is: EQUALS, DISJOINT, INTERSECTS, TOUCHES, CROSSES, WITHIN, CONTAINS, OVERLAPS, RELATE, DWITHIN, BEYOND.``
+
+**4th Query : Now I want to show that the value of iso_num (iso = country_code) will be greater than 350 then the required filter will be ``iso_num > 350``**
+
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/iso_num.JPG)
+
+**5th Query : Now I want to show that the value of iso_num will be between 200 and 800 so the required filter is ``iso_num BETWEEN 200 AND 800`` **
+
+![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/iso_num%202.JPG)
+
