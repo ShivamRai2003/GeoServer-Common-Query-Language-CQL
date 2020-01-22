@@ -138,8 +138,9 @@ Also It creates an open layers or just reflect the image file.
 **Wms Reflector >> small and simple code .With ease understand**
 
 ``WMS reflector has a great advantage in some occasions., as Standard WMS requests can be quite long and verbose. Typing into a browser, or HTML editor, can be quite cumbersome and error prone. The WMS Reflector solves this problem nicely by using good default values for the options that you do not specify.
-For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature for Russia:Asia_Russia
-<!DOCTYPE html>
+For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature for Russia:Asia_Russia``
+
+``<!DOCTYPE html>
 <html lang="en">
 <a href="http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=Russia:Asia_Russia">
 <img src="http://localhost:8080/geoserver/wms/reflect?layers=Russia:Asia_Russia&width=750"/>
@@ -150,5 +151,10 @@ For instance the following, which returns an OpenLayers application with an 800x
 
 Also It creates an open layers or just reflect the image file.
 
+**Now Create an html document that will display the OpenLayers to display the added layer.**
+
+### Image of the layer 
+
+![]()
 
 
