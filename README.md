@@ -140,12 +140,12 @@ Also It creates an open layers or just reflect the image file.
 ``WMS reflector has a great advantage in some occasions., as Standard WMS requests can be quite long and verbose. Typing into a browser, or HTML editor, can be quite cumbersome and error prone. The WMS Reflector solves this problem nicely by using good default values for the options that you do not specify.
 For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature for Russia:Asia_Russia``
 
-``<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <a href="http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=Russia:Asia_Russia">
 <img src="http://localhost:8080/geoserver/wms/reflect?layers=Russia:Asia_Russia&width=750"/>
 </a>
-</html>``
+</html>
 
 ``Note : WMS reflector is not as standard as OGC web services as OGC web services has many functionalities, and is used in Project in wider range. where as WMS reflector could only be used in previewing the WMS layer.``
 
