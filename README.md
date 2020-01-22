@@ -103,3 +103,52 @@ Click on the Options button at the top of the map preview to open the advanced o
 
 ![](https://github.com/ShivamRai2003/GeoServer-Common-Query-Language-CQL-/blob/master/IMAGES/iso_num%202.JPG)
 
+## Installation of Open Layers
+
+OpenLayers is a high-performance, feature-packed library for creating interactive maps on the web. It can display map tiles, vector data and markers loaded from any source on any web page. OpenLayers has been developed to further the use of geographic information of all kinds. It is completely free, Open Source JavaScript, released under the BSD 2-Clause License.
+
+1. First Install the ol package by ``npm install ol``
+
+2. Create the bundle for the browser by ``npm run build ``
+
+3. Download any IDE (Integrated Development Environment) like Visual Code.
+
+4. You Can Install Visual Code Plugins (For not getting any error) ``Optional``
+
+5. Now Create a New HTML file.
+
+6. Open the html file through Web Browser and see the map.
+
+7. Now Create an html document that will display the **OpenLayers** to display the added layer.
+
+## WMS REFLECTOR
+
+This is a great way to preview options in GeoServer without coding a long URL. The reflector will output PNG (the default), JPEG, PNG 8, and GIF. Also, in cases where you don't want to use GeoWebCache, this is quite useful.
+
+Standard WMS requests can be quite long and verbose. For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature ``topp:states``, with bounds set to the northwestern hemisphere by providing the appropriate bounding box
+
+Using the reflector you can make the request very short and display the Web Map.
+``http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=topp:states&width=800``
+And to create the OUTPUT image. ``<img src="http://localhost:8080/geoserver/wms/reflect?layers=topp:states&width=400" height="169" width="400"/>``
+
+Also It creates an open layers or just reflect the image file.
+
+### WMS REFLECTOR ADVANTAGE
+
+**Wms Reflector >> small and simple code .With ease understand**
+
+``WMS reflector has a great advantage in some occasions., as Standard WMS requests can be quite long and verbose. Typing into a browser, or HTML editor, can be quite cumbersome and error prone. The WMS Reflector solves this problem nicely by using good default values for the options that you do not specify.
+For instance the following, which returns an OpenLayers application with an 800x600 image set to display the feature for Russia:Asia_Russia
+<!DOCTYPE html>
+<html lang="en">
+<a href="http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=Russia:Asia_Russia">
+<img src="http://localhost:8080/geoserver/wms/reflect?layers=Russia:Asia_Russia&width=750"/>
+</a>
+</html>``
+
+``Note : WMS reflector is not as standard as OGC web services as OGC web services has many functionalities, and is used in Project in wider range. where as WMS reflector could only be used in previewing the WMS layer.``
+
+Also It creates an open layers or just reflect the image file.
+
+
+
